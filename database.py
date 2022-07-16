@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 from config import host, user, password, db_name
 
-data_dict = []
+DATA_DICT = []
 
 
 def save_information_in_json():
@@ -32,20 +32,19 @@ def save_information_in_json():
                 "social_networks": social_networks_urls
             }
 
-            data_dict.append(data)
+            DATA_DICT.append(data)
 
         # break_point for testing
-            if len(data_dict) == 3:
+            if len(DATA_DICT) == 3:
                 break
 
     with open("members_data.json", "w") as json_file:
-        json.dump(data_dict, json_file, indent=4)
+        json.dump(DATA_DICT, json_file, indent=4)
 
-    return data_dict
+    return DATA_DICT
 
 
 def create_and_populate_data_table():
-    print(data_dict)
     try:
         connection = pymysql.connect(
             host=host,
@@ -75,14 +74,14 @@ def create_and_populate_data_table():
                 print("Table contacts created successfully")
 
             with connection.cursor() as cursor:
-                for count in range(len(data_dict)):
+                for count in range(len(DATA_DICT)):
                     insert_query_1 = ("INSERT INTO `members` (member_name, company) " \
                                     "VALUES ('%(person_name)s', '%(person_company)s')" % {
-                                    'person_name': data_dict[count]['person_name'],
-                                    'person_company': data_dict[count]['person_company']})
+                                    'person_name': DATA_DICT[count]['person_name'],
+                                    'person_company': DATA_DICT[count]['person_company']})
 
                     cursor.execute(insert_query_1)
-                    for item in data_dict[count]['social_networks']:
+                    for item in DATA_DICT[count]['social_networks']:
                         insert_query_2 = ("INSERT INTO `contacts_members` (contacts, members_id) " \
                                         "VALUES ('%(contacts)s', '%(members_id)s')" % {
                                         'contacts': item,
