@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 parser_members
 config.py
 members_data.json
 members_url_list.txt
 
+=======
+>>>>>>> 5880f72 (Initial commit)
 =======
 >>>>>>> 5880f72 (Initial commit)
 # Byte-compiled / optimized / DLL files
@@ -29,6 +32,10 @@ sdist/
 var/
 wheels/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+pip-wheel-metadata/
+>>>>>>> 5880f72 (Initial commit)
 =======
 pip-wheel-metadata/
 >>>>>>> 5880f72 (Initial commit)
@@ -62,7 +69,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 <<<<<<< HEAD
+<<<<<<< HEAD
 cover/
+=======
+>>>>>>> 5880f72 (Initial commit)
 =======
 >>>>>>> 5880f72 (Initial commit)
 
@@ -88,7 +98,10 @@ docs/_build/
 
 # PyBuilder
 <<<<<<< HEAD
+<<<<<<< HEAD
 .pybuilder/
+=======
+>>>>>>> 5880f72 (Initial commit)
 =======
 >>>>>>> 5880f72 (Initial commit)
 target/
@@ -102,9 +115,13 @@ ipython_config.py
 
 # pyenv
 <<<<<<< HEAD
+<<<<<<< HEAD
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
 # .python-version
+=======
+.python-version
+>>>>>>> 5880f72 (Initial commit)
 =======
 .python-version
 >>>>>>> 5880f72 (Initial commit)
@@ -116,6 +133,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -133,6 +151,9 @@ ipython_config.py
 .pdm.toml
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+=======
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+>>>>>>> 5880f72 (Initial commit)
 =======
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 >>>>>>> 5880f72 (Initial commit)
@@ -172,6 +193,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # pytype static type analyzer
 .pytype/
@@ -179,5 +201,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+=======
+>>>>>>> 5880f72 (Initial commit)
 =======
 >>>>>>> 5880f72 (Initial commit)
